@@ -6,13 +6,7 @@ import './pages/homepage.styles.scss';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
 
 import HomePage from './pages/homepage.component';
-
-const HatsPage = () => {
-  return(
-<div>
-  <h1>HATS PAGE</h1>
-</div>
-)}
+import Shop from './components/shop/shop.component';
 
 function App() {
   return (
@@ -20,7 +14,7 @@ function App() {
     <div>
       <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route path="/hats" component={HatsPage} />
+      <Route exact path="/shop" component={Shop} />
       </Switch>
     </div>
     </BrowserRouter>
